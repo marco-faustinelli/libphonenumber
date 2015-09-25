@@ -1,18 +1,20 @@
 <?xml version="1.0" ?>
 
 <project name="libphonenumber-javascript" default="compile">
+  <property name="google-libphonenumber-area"
+            value="/root/libphonenumber_area" />
   <property name="closure-compiler.dir"
-            value="${basedir}/vendor/closure-compiler" />
+            value="${google-libphonenumber-area}/closure-compiler" />
   <property name="closure-compiler.jar"
             value="${closure-compiler.dir}/build/compiler.jar" /> 
   <property name="closure-library.dir"
-            value="${basedir}/vendor/closure-library" />
+            value="${google-libphonenumber-area}/closure-library" />
   <property name="closure-linter.dir"
-            value="${basedir}/vendor/closure-linter" />
+            value="${google-libphonenumber-area}/closure-linter" />
   <property name="python-gflags.dir"
-            value="${basedir}/vendor/python-gflags" />
+            value="${google-libphonenumber-area}/python-gflags" />
   <property name="libphonenumber.dir"
-            value="${basedir}/vendor/libphonenumber" />
+            value="${google-libphonenumber-area}/libphonenumber" />
 
   <macrodef name="closure-compile">
     <attribute name="inputfile" />
